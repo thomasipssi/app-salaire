@@ -1,0 +1,11 @@
+db_host: "db.thomas.form"
+webserver_host: "web.thomas.form"
+  
+mysql_dbname:
+  - 'dbsalaire'
+
+mysql_user:
+  - 'root'
+
+mysql_password:
+  - ''
