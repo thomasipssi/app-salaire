@@ -1,0 +1,17 @@
+---
+ - name: creation utilisateurs
+   hosts: all
+   become: yes
+   remote_user: thomas
+   roles:
+    - createuser
+  
+- name: installation serveur web
+   hosts: [web]
+   roles:
+    - webserver
+    
+- name: installation mariadb
+  hosts: [db]
+  roles:
+    - database
